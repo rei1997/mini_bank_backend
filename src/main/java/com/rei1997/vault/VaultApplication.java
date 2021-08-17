@@ -24,7 +24,7 @@ public class VaultApplication {
 		return args -> {
 			String email ="test456@123.ccc";
 			User user = new User(
-				"Sean","Lo",email,"86+98145123","male","street3",LocalDateTime.now(),LocalDateTime.now(),1
+				email,"test","test",0123456,1
 			);
 
 

@@ -12,5 +12,6 @@ public interface UserProfileRepo extends MongoRepository<UserProfile,String>{
 
     Optional<UserProfile> findUserProfileByEmail(String email);
     Optional<Integer> findGenderByEmail(String email);
+    Optional<String> findEmailBakByEmail(String email);
     
 }

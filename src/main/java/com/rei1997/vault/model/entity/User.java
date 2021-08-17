@@ -15,36 +15,28 @@ import lombok.Data;
 public class User {
 
 
-    @NonNull
-    private String firstName;
-    private String lastName;
     @Id    
     @Indexed(unique = true)
     @NonNull
     private String email;
     @Indexed(unique = true)
-    private String cellPhone;
     @NonNull
-    private String gender;
-    private String address;
+    private String userAccount;
     @NonNull
-    private LocalDateTime createTime;
+    private String userPassword;
     @NonNull
-    private LocalDateTime modifyTime;
+    private Integer depositAccount;
     @NonNull
     private Integer status;
 
-    public User(String firstName,String lastName,String email,String cellPhone,
-                    String gender,String address,LocalDateTime createTime,LocalDateTime modifyTime,Integer status){
-                        this.firstName = firstName;
-                        this.lastName = lastName;
-                        this.email = email;
-                        this.cellPhone = cellPhone;
-                        this.gender = gender;
-                        this. address = address;
-                        this.createTime = createTime;
-                        this.modifyTime = modifyTime;
-                        this.status = status;
+    public User(String email, String userAccount, String userPassword, Integer depositAccount, Integer status) {
+        this.email = email;
+        this.userAccount = userAccount;
+        this.userPassword = userPassword;
+        this.depositAccount = depositAccount;
+        this.status = status;
+    }
 
-                    }
+    
+
 }

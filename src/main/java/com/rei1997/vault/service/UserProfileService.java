@@ -37,4 +37,16 @@ public class UserProfileService {
         return gender;
     }
 
+    public String getUserEmailBak(String email){
+        String emailBak="";
+        Optional<String> userEmailBak;
+        userEmailBak= userProfileRepo.findEmailBakByEmail(email);
+        if (userEmailBak.isPresent()){
+            emailBak=userEmailBak.get();
+        }
+        return emailBak;
+    }
+
+
+
 }
