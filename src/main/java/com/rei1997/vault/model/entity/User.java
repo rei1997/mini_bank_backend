@@ -1,21 +1,17 @@
 package com.rei1997.vault.model.entity;
 
-import java.time.LocalDateTime;
-
 import com.mongodb.lang.NonNull;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import lombok.Data;
 
-@Data
-@Document
+@Data //lomobk
+@Document //Collection
 public class User {
 
-
     @Id    
+    private String id;
     @Indexed(unique = true)
     @NonNull
     private String email;
@@ -36,7 +32,5 @@ public class User {
         this.depositAccount = depositAccount;
         this.status = status;
     }
-
-    
 
 }

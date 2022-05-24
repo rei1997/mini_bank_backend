@@ -5,7 +5,7 @@ package com.rei1997.vault.service;
 import java.util.List;
 import java.util.Optional;
 
-import com.rei1997.vault.model.entity.User;
+
 import com.rei1997.vault.model.entity.UserProfile;
 import com.rei1997.vault.model.repository.UserProfileRepo;
 

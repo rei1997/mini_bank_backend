@@ -15,6 +15,7 @@ import lombok.Data;
 public class UserProfile {
     
     @Id
+    private String id;
     @NonNull
     @Indexed(unique = true)
     private String email;
